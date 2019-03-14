@@ -12,3 +12,5 @@ Wordpress plugin that create redirection for .htaccess if you want to change per
 6. Copy rules you get to you .htaccess file
 
 
+Just one limitations, for this moment it can't work if you have more than 10.000 links.
+Sorry...
