@@ -65,12 +65,6 @@ function my_plugin_create_db() {
                                                             'guid' => str_replace($url, "", get_permalink($post[0]))."/",
                                                             'type' => 'post'
                                                     )
-/* 									array( 
-                                                            'line_id' => $post->ID, 
-                                                            //'name' => $post->post_name, 
-                                                            'guid' => str_replace($url, "", get_permalink($post->ID))."/",
-                                                            'type' => 'post'
-                                                    ) */
 
                                             );
                             }
@@ -84,8 +78,6 @@ function my_plugin_create_db() {
                     //SELECT TERMS
             $posts = $wpdb->get_results("SELECT t.term_id AS id, t.slug AS post_url FROM {$wpdb->terms} t LEFT JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id WHERE  tt.taxonomy = 'category'");
                     foreach ( (array) $posts as $post ) {
-
-            //var_dump($post);	
 
                                     $wpdb->insert( 
                                             $table_name, 
@@ -105,7 +97,6 @@ function my_plugin_create_db() {
             $posts = $wpdb->get_results("SELECT t.term_id AS id, t.slug AS post_url FROM {$wpdb->terms} t LEFT JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id WHERE   tt.taxonomy = 'post_tag'");
                     foreach ( (array) $posts as $post ) {
 
-            //var_dump($post);	
 
                                     $wpdb->insert( 
                                             $table_name, 
