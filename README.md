@@ -2,7 +2,7 @@
 
 Wordpress plugin that create redirection for .htaccess if you want to change permalinks. It will help your site to stay SEO friendly and not to lost you clients.
 
-### Steps
+## Steps
 
 1. `Create back up` of your site and database.
 2. Upload `link-changer-htaccess` folder to the `/wp-content/plugins/` directory.
@@ -11,6 +11,10 @@ Wordpress plugin that create redirection for .htaccess if you want to change per
 5. Return to this page *LCH Plugin* and click "Prepare redirection" button
 6. Copy rules you get to you .htaccess file
 
+
+## Video
+
+[Video - how it works.](https://youtu.be/_rBlqsA2tw0)
 
 #### Just one limitations, for this moment it can't work if you have more than 10.000 links. 
 Sorry...
