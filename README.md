@@ -16,9 +16,12 @@ Wordpress plugin that create redirection for .htaccess if you want to change per
 
 [Video - how it works.](https://youtu.be/_rBlqsA2tw0)
 
+## Attention
+
 #### Just one limitations, for this moment it can't work if you have more than 10.000 links. 
 Sorry...
 
+## Contact
 
 If you have some questions or proposition, please write me an email: bars38@gmail.com
 
